@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+} 
+
+.hero-text {
+    font-size: 48px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    color: #0ccc0c;
+}
+
+.hero-text button {
+    padding: 15px 35px;
+    font-size: 16px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.hero-text button:hover {
+    background: #16a34a;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+}
+
+.projects {
+    padding: 80px 60px;
+    background: #020617;
+    color: white;
+    margin-top: 50px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-card {
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 15px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.project-card:hover {
+    transform: translateY(-10px)
+    scale(1.03);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    background: #020617;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #22c55e;
+    text-shadow: 0 0 10px #22c55e;
+}
+
+.navbar a:active {
+    color: #22c55e;
+}
+
+.contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: #020617;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    color: #94a3b8;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    background: #0f172a;
+    color: white;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    background: #22c55e;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    box-shadow: 0 0 25px #22c55e;
+    transform: scale(1.03);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 10px #22c55e;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #94a3b8;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+.skills {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill {
+    background: #1e293b;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #22c55e;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill :hover {
+    transform: translateY(-5px) scale(1.05);
+    background: #22c55e;
+    color: black;
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.button {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-info a {
+    color: #22c55e;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
