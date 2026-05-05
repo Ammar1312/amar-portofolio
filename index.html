@@ -2,130 +2,411 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Amar Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Amar Domazet, a frontend developer focused on responsive websites, clean UI and smooth animations.">
+    <title>Amar Domazet | Frontend Developer</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
 
     <nav class="navbar">
-        <h2>Amar</h2>
+        <a class="brand" href="#home" aria-label="Amar Domazet home">
+            Amar<span>.</span>
+        </a>
 
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
-    <section class="hero reveal">
-        <div class="hero-text">
-        <h1>Amar Domazet</h1>
-        <p>Future Fronted Developer</p>
-        <button>Contact me</button>
-        </div>
+    <main>
+        <section id="home" class="hero section-shell">
+            <div class="hero-copy reveal">
+                <p class="eyebrow">Frontend Developer</p>
+                <h1 class="text-reveal">
+                    Amar Domazet
+                    <span>builds clean digital interfaces.</span>
+                </h1>
+                <p class="hero-lead">
+                    I create responsive websites with modern layouts, smooth interactions and a premium user experience.
+                </p>
 
-        <div class="hero-img">
-            <img src="me.jpg" alt="">
-        </div>
-
-    </section>
-
-    <section class="about reveal">
-        <h2>About Me</h2>
-        <p>
-            I am a motivated future fronted developer currently learning HTML,CSS,and JavaScript.
-            I enjoy building modern and responsive websites and continuosly improving my skills.
-        </p>
-    </section>
-
-    <section class="skills reveal">
-        <h2>My skills</h2>
-
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript(learning)</div>
-            <div class="skill">Git & GitHub</div>
-        </div>
-
-        <div class="skills-icons">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <i class="fab fa-github"></i>
-        </div>
-        
-    </section>
-
-    <section id="projects" class="projects reveal">
-        <h2>My Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <img src="gaming.jpg">
-                <h3>Gaming Marketplace</h3>
-                <p>Website for browsing and buying games.</p>
-                <a href="https://ammar1312.github.io/gaming-marketplace/"target="_blank">View Project</a>
+                <div class="hero-actions">
+                    <a class="button primary magnetic" href="#projects">
+                        <span>View projects</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="button ghost magnetic" href="#contact">
+                        <span>Let's talk</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </a>
+                </div>
             </div>
 
-            <div class="project-card">
-                <img src="movie.jpg">
-                <h3>Movie Website</h3>
-                <p>UI design practice for movie platform</p>
-                <a href="#">View Design</a>
+            <div class="hero-panel reveal">
+                <div class="profile-card">
+                    <img src="me.jpg" alt="Amar Domazet">
+                    <div>
+                        <span>Available for</span>
+                        <strong>Junior frontend roles</strong>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong data-target="7">0</strong>
+                        <span>Skills</span>
+                    </div>
+                    <div>
+                        <strong data-target="3">0</strong>
+                        <span>Projects</span>
+                    </div>
+                    <div>
+                        <strong data-target="100" data-suffix="%">0%</strong>
+                        <span>Learning mindset</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-shell reveal">
+            <div class="section-heading">
+                <p class="eyebrow">About me</p>
+                <h2 class="text-reveal">I design and build frontend experiences with clarity and motion.</h2>
             </div>
 
-            <div class="project-card">
-                <img src="ecommerce.jpg">
-                <h3>E-commerce Store</h3>
-                <p>Landing page for online shopping.</p>
-                <a href="#">View Design</a>
+            <div class="about-grid">
+                <p>
+                    I am a frontend developer based in Slovenia, focused on building modern websites that feel clean, fast and easy to use. My work combines HTML, CSS and JavaScript with strong attention to responsive design and visual details.
+                </p>
+                <p>
+                    I enjoy improving every project through better structure, smoother animations and small UI details that make the page feel more professional.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills section-shell reveal">
+            <div class="section-heading center">
+                <p class="eyebrow">Skills</p>
+                <h2 class="text-reveal">Frontend tools I use to build polished interfaces.</h2>
             </div>
 
-        </div>
-    </section>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic page structure, accessible content and clean layout foundations.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, Flexbox, Grid, animations and mobile-first styling.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive behavior, logic, arrays, loops, conditions and UI functionality.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Websites optimized for desktop, tablet and mobile screen sizes.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>DOM Manipulation</h3>
+                    <p>Dynamic UI updates, event listeners, class toggles and interactive elements.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fab fa-github"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, commits, pushing code and managing frontend projects.</p>
+                </article>
+                <article class="skill-card">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Netlify Deployment</h3>
+                    <p>Deploying and maintaining live frontend projects with clean workflows.</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="contact" class="contact reveal">
-        <h2>Get In Touch</h2>
-        <p>Feel free to contact me for any projects or opportunities.</p>
+        <section id="projects" class="projects section-shell reveal">
+            <div class="section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 class="text-reveal">Projects built with clean UI, responsive layouts and motion.</h2>
+            </div>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Your email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img class="barber-preview" src="screenshot.png" alt="Barber Shop website preview">
+                        <div class="project-overlay">
+                            <a href="https://ammar1312.github.io/CANI-Barber-Shop/" class="mini-button" target="_blank" rel="noreferrer">Live preview</a>
+                            <a href="#contact" class="mini-button muted">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span>Client project / In progress</span>
+                        <h3>Barber Shop</h3>
+                        <p>A real client barber shop website currently in progress, focused on booking flow, service presentation, responsive layout and a polished local business experience.</p>
+                    </div>
+                </article>
 
-            <button type="submit">Send Message</button>
-        </form>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="gaming.jpg" alt="Auto Coding website preview">
+                        <div class="project-overlay">
+                            <a href="#contact" class="mini-button">Live preview</a>
+                            <a href="#contact" class="mini-button muted">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span>Responsive UI</span>
+                        <h3>Auto Coding</h3>
+                        <p>A clean automotive service interface focused on conversion, readable sections and polished interactions.</p>
+                    </div>
+                </article>
 
-        <div class="contact-info">
-            <p> Email: <a href="amardomazet6@gmail.com">amardomazet6@gmail.com</a></p>
-            <p>Location: Slovenia</p>
-            <p>Available for freelance work</p>
-        </div>
-    </section>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="login%20sistem.png" alt="Login System preview">
+                        <div class="project-overlay">
+                            <a href="https://ammar1312.github.io/Secure-Login-UI/" class="mini-button" target="_blank" rel="noreferrer">Live preview</a>
+                            <a href="#contact" class="mini-button muted">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span>JavaScript</span>
+                        <h3>Login System</h3>
+                        <p>An interactive login UI with form states, input validation and a smooth frontend flow.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section-shell reveal">
+            <div class="contact-copy">
+                <p class="eyebrow">Contact</p>
+                <h2 class="text-reveal">Have an idea or opportunity? Let's build something clean.</h2>
+                <div class="social-links">
+                    <a href="mailto:amardomazet6@gmail.com" aria-label="Email Amar">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/ammar1312" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#home" aria-label="Back to top">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" action="mailto:amardomazet6@gmail.com" method="post" enctype="text/plain">
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Your name" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </label>
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                </label>
+                <button class="button primary magnetic" type="submit">
+                    <span>Send message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+    </main>
 
     <footer class="footer">
-        <p>© 2026 Amar Domazet. All rights reserved.</p>
+        <p>&copy; 2026 Amar Domazet. All rights reserved.</p>
+        <span>Frontend Developer</span>
     </footer>
-    
+
     <script>
-  const reveals = document.querySelectorAll(".reveal");
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const reveals = document.querySelectorAll(".reveal");
+        const navLinks = document.querySelectorAll(".navbar a[href^='#']");
+        const sections = document.querySelectorAll("main section[id]");
+        const progress = document.querySelector(".scroll-progress");
+        const statNumbers = document.querySelectorAll("[data-target]");
+        const magneticItems = document.querySelectorAll(".magnetic");
+        const canvas = document.querySelector(".ambient-canvas");
+        const ctx = canvas.getContext("2d");
+        let statsPlayed = false;
+        let particles = [];
+        let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
-  window.addEventListener("scroll", () => {
-    reveals.forEach((el) => {
-      const windowHeight = window.innerHeight;
-      const elementTop = el.getBoundingClientRect().top;
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        }, { threshold: 0.16 });
 
-      if (elementTop < windowHeight - 100) {
-        el.classList.add("active");
-      }
-    });
-  });
-</script>
+        reveals.forEach((el, index) => {
+            el.style.setProperty("--delay", `${Math.min(index * 0.08, 0.32)}s`);
+            revealObserver.observe(el);
+        });
 
+        const updatePageState = () => {
+            const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollAmount = scrollable > 0 ? window.scrollY / scrollable : 0;
+            let current = "home";
 
+            progress.style.transform = `scaleX(${scrollAmount})`;
+
+            sections.forEach((section) => {
+                if (window.scrollY >= section.offsetTop - 180) {
+                    current = section.id;
+                }
+            });
+
+            navLinks.forEach((link) => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${current}`);
+            });
+        };
+
+        const animateStats = () => {
+            if (statsPlayed) {
+                return;
+            }
+
+            const stats = document.querySelector(".hero-stats");
+            const statsTop = stats.getBoundingClientRect().top;
+
+            if (statsTop > window.innerHeight - 80) {
+                return;
+            }
+
+            statsPlayed = true;
+
+            statNumbers.forEach((number) => {
+                const target = Number(number.dataset.target);
+                const suffix = number.dataset.suffix || "";
+                const duration = 1100;
+                const start = performance.now();
+
+                const tick = (time) => {
+                    const progressValue = Math.min((time - start) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progressValue, 3);
+                    number.textContent = `${Math.round(target * eased)}${suffix}`;
+
+                    if (progressValue < 1) {
+                        requestAnimationFrame(tick);
+                    }
+                };
+
+                requestAnimationFrame(tick);
+            });
+        };
+
+        window.addEventListener("scroll", () => {
+            updatePageState();
+            animateStats();
+        }, { passive: true });
+
+        window.addEventListener("load", () => {
+            updatePageState();
+            animateStats();
+        });
+
+        if (reduceMotion) {
+            statNumbers.forEach((number) => {
+                number.textContent = `${number.dataset.target}${number.dataset.suffix || ""}`;
+            });
+            statsPlayed = true;
+        } else {
+            magneticItems.forEach((item) => {
+                item.addEventListener("mousemove", (event) => {
+                    const rect = item.getBoundingClientRect();
+                    const x = event.clientX - rect.left - rect.width / 2;
+                    const y = event.clientY - rect.top - rect.height / 2;
+                    item.style.transform = `translate(${x * 0.14}px, ${y * 0.2}px)`;
+                });
+
+                item.addEventListener("mouseleave", () => {
+                    item.style.transform = "";
+                });
+            });
+
+            window.addEventListener("mousemove", (event) => {
+                mouse = { x: event.clientX, y: event.clientY };
+            });
+
+            const resizeCanvas = () => {
+                const ratio = Math.min(window.devicePixelRatio || 1, 2);
+                canvas.width = window.innerWidth * ratio;
+                canvas.height = window.innerHeight * ratio;
+                canvas.style.width = `${window.innerWidth}px`;
+                canvas.style.height = `${window.innerHeight}px`;
+                ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+                const count = window.innerWidth < 720 ? 32 : 58;
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * window.innerWidth,
+                    y: Math.random() * window.innerHeight,
+                    vx: (Math.random() - 0.5) * 0.28,
+                    vy: (Math.random() - 0.5) * 0.28,
+                    size: Math.random() * 1.8 + 0.6
+                }));
+            };
+
+            const drawAmbient = () => {
+                ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+                particles.forEach((particle, index) => {
+                    const mouseDistance = Math.hypot(particle.x - mouse.x, particle.y - mouse.y);
+
+                    if (mouseDistance < 150) {
+                        particle.x += (particle.x - mouse.x) * 0.004;
+                        particle.y += (particle.y - mouse.y) * 0.004;
+                    }
+
+                    particle.x += particle.vx;
+                    particle.y += particle.vy;
+
+                    if (particle.x < 0 || particle.x > window.innerWidth) particle.vx *= -1;
+                    if (particle.y < 0 || particle.y > window.innerHeight) particle.vy *= -1;
+
+                    ctx.beginPath();
+                    ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                    ctx.fillStyle = "rgba(213, 255, 222, 0.48)";
+                    ctx.fill();
+
+                    for (let i = index + 1; i < particles.length; i += 1) {
+                        const other = particles[i];
+                        const distance = Math.hypot(particle.x - other.x, particle.y - other.y);
+
+                        if (distance < 110) {
+                            ctx.beginPath();
+                            ctx.moveTo(particle.x, particle.y);
+                            ctx.lineTo(other.x, other.y);
+                            ctx.strokeStyle = `rgba(118, 255, 190, ${0.14 * (1 - distance / 110)})`;
+                            ctx.stroke();
+                        }
+                    }
+                });
+
+                requestAnimationFrame(drawAmbient);
+            };
+
+            resizeCanvas();
+            drawAmbient();
+            window.addEventListener("resize", resizeCanvas);
+        }
+    </script>
 </body>
 </html>
