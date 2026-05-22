@@ -51,6 +51,7 @@ This portfolio presents my frontend work, skills and contact information in a cl
 .
 |-- index.html
 |-- style.css
+|-- amar-domazet-cv.pdf
 |-- me.jpg
 |-- favicon.svg
 |-- spendly-preview.png
