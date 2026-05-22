@@ -52,6 +52,7 @@ This portfolio presents my frontend work, skills and contact information in a cl
 |-- index.html
 |-- style.css
 |-- me.jpg
+|-- favicon.svg
 |-- spendly-preview.png
 |-- barber-preview.jpg
 |-- weather-preview.jpg
