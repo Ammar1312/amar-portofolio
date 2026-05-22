@@ -12,10 +12,10 @@ This portfolio presents my frontend work, skills and contact information in a cl
 
 ## Featured Projects
 
-- Spendly Expense Tracker
-- CANI Barber Shop
-- Weather App
+- Spendly Finance Manager
+- Atmos Weather App
 - Secure Login UI
+- CANI Barber Shop
 
 ## Tech Stack
 
@@ -23,6 +23,11 @@ This portfolio presents my frontend work, skills and contact information in a cl
 - CSS3
 - Vanilla JavaScript
 - Responsive design
+- DOM manipulation
+- REST API
+- LocalStorage
+- Chart.js
+- Git & GitHub
 - GitHub Pages
 - Font Awesome
 
